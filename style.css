@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0c29;
+    overflow-x: hidden;
+}
+
+/* Fond animé */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #667eea, #764ba2, #89f7fe);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.cv {
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #4b2fa6;
+}
+
+h2 {
+    font-weight: 400;
+    color: #555;
+}
+
+.card {
+    background: #f7f8ff;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h3 {
+    color: #4b2fa6;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-size: 14px;
+}
+
+.bar {
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    width: 0;
+    animation: loadBar 1.5s forwards;
+}
+
+@keyframes loadBar {
+    from { width: 0; }
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    color: #4b2fa6;
+}
+
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    filter: blur(6px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
