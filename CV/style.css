@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0f0c29;
+    background: #645763;
     overflow-x: hidden;
 }
 
@@ -12,7 +12,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(120deg, #667eea, #764ba2, #89f7fe);
+    background: linear-gradient(120deg, #534452, #756975, #a9a2a9);
     background-size: 300% 300%;
     animation: gradientMove 12s ease infinite;
     z-index: -1;
@@ -27,7 +27,7 @@ body {
 .cv {
     max-width: 900px;
     margin: 50px auto;
-    background: rgba(255,255,255,0.95);
+    background: #eeecee;
     border-radius: 25px;
     padding: 40px;
 }
@@ -39,16 +39,16 @@ header {
 
 h1 {
     font-size: 40px;
-    color: #4b2fa6;
+    color: #988f97;
 }
 
 h2 {
     font-weight: 400;
-    color: #555;
+    color: #988f97;
 }
 
 .card {
-    background: #f7f8ff;
+    background: inherit;
     border-radius: 18px;
     padding: 25px;
     margin-bottom: 25px;
@@ -57,11 +57,11 @@ h2 {
 
 .card:hover {
     transform: translateY(-8px) scale(1.01);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px #988f97;
 }
 
 h3 {
-    color: #4b2fa6;
+    color: #988f97;
 }
 
 .skill {
@@ -81,19 +81,13 @@ h3 {
 
 .bar div {
     height: 100%;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #534452, #a9a2a9);
     width: 0;
     animation: loadBar 1.5s forwards;
 }
 
 @keyframes loadBar {
     from { width: 0; }
-}
-
-footer {
-    text-align: center;
-    font-weight: 600;
-    color: #4b2fa6;
 }
 
 /* Reveal animation */
