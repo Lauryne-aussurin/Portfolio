@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+h1+p {
+    text-align: center;
+}
+>>>>>>> dev
 
 p1 {
     color: red;
@@ -13,4 +19,45 @@ p2 {
 p3 {
     color: green;
     font-weight: bold;
+<<<<<<< HEAD
+=======
+}
+
+p {
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    height: auto; 
+    min-height: 100%;
+}
+
+.colonne-gauche {
+    flex: 2;
+}
+
+.colonne-droite {
+    flex: 1;
+    align-self: stretch; 
+}
+
+.video-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px; 
+    z-index: 10;
+}
+
+@media screen and (max-width: 980px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .video-sticky {
+        position: static;
+        margin-top: 20px;
+    }
+>>>>>>> dev
 }
