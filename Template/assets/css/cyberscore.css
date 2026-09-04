@@ -3,19 +3,23 @@ h1+p {
     text-align: center;
 }
 
-p1 {
-    color: red;
-    font-weight: bold;
+.passager-intimide {
+    color: red !important;
+    font-weight: 600 !important;
 }
 
-p2 {
-    color: orange;
-    font-weight: bold;
+.cible-confiante {
+    color: orange !important;
+    font-weight: 600 !important;
 }
 
-p3 {
-    color: green;
-    font-weight: bold;
+.eclaireur-prudent {
+    color: green !important;
+    font-weight: 600 !important;
+}
+.comp {
+    color: #83d3c9 !important;
+    font-weight: 600 !important;
 }
 
 p {
